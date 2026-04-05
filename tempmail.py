@@ -132,7 +132,10 @@ async def start(client, message):
         "This token allows you to check the 10 most recent emails received by your temporary mail address. "
         "Each email has a different token, so please keep your tokens private and secure. 🛡️"
     )
-    await message.reply(welcome_message)
+    await message.reply_photo(
+        photo="https://files.catbox.moe/e23hj8.jpg",
+        caption=welcome_message
+    )
 
 
 @bot.on_message(filters.command('tmail'))
