@@ -2,4 +2,4 @@ pyrofork
 tgcrypto
 requests
 beautifulsoup4
-pip install pyrogram requests beautifulsoup4 flask
+flask
