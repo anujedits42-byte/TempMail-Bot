@@ -8,5 +8,8 @@ app = Flask(__name__)
 def home():
     return "Bot is running ✅"
 
+def start_bot():
+    bot.run()
+
 # Start bot in separate thread
-threading.Thread(target=bot.run).start()
+threading.Thread(target=start_bot).start()
