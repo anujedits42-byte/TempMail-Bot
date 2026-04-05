@@ -157,7 +157,7 @@ async def generate_mail(client, message):
     domain = get_domain()
     if not domain:
         await message.reply("**Failed to retrieve domain try Again**")
-        await bot.delete_messages(message.chat.id, [loading_msg.message_id])
+        await bot.delete_messages(message.chat.id, [loading_msg.id])
         return
 
     email = f"{username}@{domain}"
