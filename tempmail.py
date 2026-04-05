@@ -123,14 +123,14 @@ def list_messages(token):
 @bot.on_message(filters.command('start'))
 async def start(client, message):
     welcome_message = (
-        "**Welcome to our Temp Mail Bot!** 🎉\n\n"
-        "You can use the following commands to manage temporary email addresses:\n\n"
-        "➢ `/tmail` - Generate a random mail with a password.\n"
-        "➢ `/tmail [username]:[pass]` - Generate a specific mail with a password.\n"
-        "➢ `/cmail [mail token]` - Check the 10 most recent mails using your mail token.\n\n"
-        "✨ **Note:** When you generate a mail and password, you will receive a mail token. "
-        "This token allows you to check the 10 most recent emails received by your temporary mail address. "
-        "Each email has a different token, so please keep your tokens private and secure. 🛡️"
+        "**Wᴇʟᴄᴏᴍᴇ ᴛᴏ ᴏᴜʀ Tᴇᴍᴘ Mᴀɪʟ Bᴏᴛ!** 🎉\n\n"
+        "Yᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ᴄᴏᴍᴍᴀɴᴅꜱ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴛᴇᴍᴘᴏʀᴀʀʏ ᴇᴍᴀɪʟ ᴀᴅᴅʀᴇꜱꜱᴇꜱ:\n\n"
+        "➢ `/ᴛᴍᴀɪʟ` - Gᴇɴᴇʀᴀᴛᴇ ᴀ ʀᴀɴᴅᴏᴍ ᴍᴀɪʟ ᴡɪᴛʜ ᴀ ᴘᴀꜱꜱᴡᴏʀᴅ.\n"
+        "➢ `/ᴛᴍᴀɪʟ [ᴜꜱᴇʀɴᴀᴍᴇ]:[ᴘᴀꜱꜱ]` - Gᴇɴᴇʀᴀᴛᴇ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴀɪʟ ᴡɪᴛʜ ᴀ ᴘᴀꜱꜱᴡᴏʀᴅ.\n"
+        "➢ `/ᴄᴍᴀɪʟ [ᴍᴀɪʟ ᴛᴏᴋᴇɴ]` - Cʜᴇᴄᴋ ᴛʜᴇ 10 ᴍᴏꜱᴛ ʀᴇᴄᴇɴᴛ ᴍᴀɪʟꜱ ᴜꜱɪɴɢ ʏᴏᴜʀ ᴍᴀɪʟ ᴛᴏᴋᴇɴ.\n\n"
+        "✨ **Nᴏᴛᴇ:** Wʜᴇɴ ʏᴏᴜ ɢᴇɴᴇʀᴀᴛᴇ ᴀ ᴍᴀɪʟ ᴀɴᴅ ᴘᴀꜱꜱᴡᴏʀᴅ, ʏᴏᴜ ᴡɪʟʟ ʀᴇᴄᴇɪᴠᴇ ᴀ ᴍᴀɪʟ ᴛᴏᴋᴇɴ. "
+        "Tʜɪꜱ ᴛᴏᴋᴇɴ ᴀʟʟᴏᴡꜱ ʏᴏᴜ ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ 10 ᴍᴏꜱᴛ ʀᴇᴄᴇɴᴛ ᴇᴍᴀɪʟꜱ ʀᴇᴄᴇɪᴠᴇᴅ ʙʏ ʏᴏᴜʀ ᴛᴇᴍᴘᴏʀᴀʀʏ ᴍᴀɪʟ ᴀᴅᴅʀᴇꜱꜱ. "
+        "Eᴀᴄʜ ᴇᴍᴀɪʟ ʜᴀꜱ ᴀ ᴅɪꜰꜰᴇʀᴇɴᴛ ᴛᴏᴋᴇɴ, ꜱᴏ ᴘʟᴇᴀꜱᴇ ᴋᴇᴇᴘ ʏᴏᴜʀ ᴛᴏᴋᴇɴꜱ ᴘʀɪᴠᴀᴛᴇ ᴀɴᴅ ꜱᴇᴄᴜʀᴇ. 🛡️"
     )
     await message.reply_photo(
         photo="https://files.catbox.moe/e23hj8.jpg",
