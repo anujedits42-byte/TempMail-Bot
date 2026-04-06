@@ -1,6 +1,6 @@
 from flask import Flask
 import threading
-from tempmail import bot  # Pyrogram client
+from tempmail import bot
 
 app = Flask(__name__)
 
@@ -8,8 +8,8 @@ app = Flask(__name__)
 def home():
     return "Bot is running ✅"
 
-def start_bot():
+def run_bot():
     bot.run()
 
-# Start bot in separate thread
-threading.Thread(target=start_bot).start()
+# Start bot in background
+threading.Thread(target=run_bot).start()
