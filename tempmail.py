@@ -308,4 +308,4 @@ async def manual_check_mail(client, message):
     await message.reply(output, reply_markup=InlineKeyboardMarkup(keyboard))
     await bot.delete_messages(message.chat.id, [loading_msg.id])
 
-bot = Client(...)
+
